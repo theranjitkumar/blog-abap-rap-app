@@ -1,0 +1,25 @@
+managed implementation in class zbp_i_blog unique;
+strict ( 2 );
+
+define behavior for ZI_BLOG alias Blog
+persistent table zblog_tbl
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) BlogId;
+
+  mapping for zblog_tbl
+    {
+      BlogId    = blog_id;
+      Title     = title;
+      Content   = content;
+      Author    = author;
+      Status    = status;
+      CreatedBy = created_by;
+      CreatedAt = created_at;
+    }
+}

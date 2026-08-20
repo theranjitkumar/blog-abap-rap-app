@@ -1,6 +1,16 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Blog cds projection view'
 @Metadata.ignorePropagatedAnnotations: true
+
+@UI.headerInfo: {
+    typeName: 'Blog',
+    typeNamePlural: 'Blogs',
+    title: {
+        type: #STANDARD,
+        value: 'Title'
+    }
+}
+
 define root view entity ZC_BLOG
   as projection on ZI_BLOG
 {
