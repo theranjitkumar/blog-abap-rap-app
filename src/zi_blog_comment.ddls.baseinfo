@@ -3,12 +3,10 @@
 {
 "FROM":
 [
-"ZBLOG_TBL"
+"ZBLOG_COMMENTTBL"
 ],
 "ASSOCIATED":
-[
-"ZI_BLOG_COMMENT"
-],
+[],
 "BASE":
 [],
 "ANNO_REF":

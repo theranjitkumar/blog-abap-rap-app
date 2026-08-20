@@ -3,7 +3,9 @@
 @Metadata.ignorePropagatedAnnotations: true
 define root view entity ZI_BLOG
   as select from zblog_tbl
-  //composition of target_data_source_name as //_association_name
+
+  association [0..*] to ZI_BLOG_COMMENT as _Comments on $projection.BlogId = _Comments.BlogId
+
 {
   key blog_id         as BlogId,
       title           as Title,
@@ -13,7 +15,7 @@ define root view entity ZI_BLOG
       created_by      as CreatedBy,
       created_at      as CreatedAt,
       last_changed_by as LastChangedBy,
-      last_changed_at as LastChangedAt
+      last_changed_at as LastChangedAt,
 
-      //_association_name // Make association public
+      _Comments // Make association public
 }
