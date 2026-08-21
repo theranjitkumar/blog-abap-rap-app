@@ -73,8 +73,8 @@ Database Tables
 └── Fiori Elements
     └── Blog CRUD UI
 ```
-
 # Features
+```text
 Create Blog
 Read Blog
 Update Blog
