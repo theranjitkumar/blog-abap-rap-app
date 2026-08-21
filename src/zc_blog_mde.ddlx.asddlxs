@@ -1,0 +1,25 @@
+@Metadata.layer: #CORE
+annotate entity ZC_BLOG with
+{
+  @UI: { lineItem: [{ position: 10, value: 'BlogId' }], identification: [{ position: 10, value: 'BlogId' }] }
+  BlogId;
+
+  @UI: { lineItem: [{ position: 20, value: 'Title' }], identification: [{ position: 20, value: 'Title' }] }
+  Title;
+
+  @UI: { lineItem: [{ position: 30, value: 'Content' }], identification: [{ position: 30, value: 'Content' }] }
+  Content;
+
+  @UI: { lineItem: [{ position: 40, value: 'Author' }], identification: [{ position: 40, value: 'Author' }] }
+  Author;
+
+  @UI: { lineItem: [{ position: 50, value: 'Status' }], identification: [{ position: 50, value: 'Status' }] }
+  Status;
+  //    CreatedBy;
+  //    CreatedAt;
+  //    LastChangedBy;
+  //    LastChangedAt;
+  /* Associations */
+  //  _Comments;
+
+}
