@@ -27,5 +27,45 @@ sap-abap-rap-blog-crud
 │   ├── ZUI_BLOG
 │   └── ZUI_BLOG_O4
 │
+
+Database Tables
+      │
+      ├── ZBLOG
+      └── ZBLOG_COMMENT
+             │
+             ▼
+       CDS Data Model
+             │
+             ├── ZI_BLOG
+             ├── ZI_BLOG_COMMENT
+             └── Associations
+                    │
+                    ▼
+          RAP Business Object
+                    │
+             ┌──────┴──────┐
+             │             │
+       Behavior Def.   Behavior Impl.
+             │             │
+             └──────┬──────┘
+                    ▼
+             Projection Layer
+                    │
+                    ▼
+             Service Definition
+                 ZUI_BLOG
+                    │
+                    ▼
+             Service Binding
+               ZUI_BLOG_O4
+                    │
+                    ▼
+             OData V4 Service
+                    │
+                    ▼
+             Fiori Elements
+                    │
+                    ▼
+             Blog CRUD UI
 └── Fiori Elements
     └── Blog CRUD UI
