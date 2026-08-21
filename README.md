@@ -27,7 +27,7 @@ sap-abap-rap-blog-crud
 │   ├── ZUI_BLOG
 │   └── ZUI_BLOG_O4
 │
-
+```
 ## Application Architecture
 
 ```text
