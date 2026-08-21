@@ -28,6 +28,9 @@ sap-abap-rap-blog-crud
 │   └── ZUI_BLOG_O4
 │
 
+## Application Architecture
+
+```text
 Database Tables
       │
       ├── ZBLOG
