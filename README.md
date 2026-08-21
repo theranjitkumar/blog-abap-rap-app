@@ -1,6 +1,13 @@
 # blog-abap-rap-app
 End-to-end ABAP RAP Blog application demonstrating CDS Views, associations, managed behavior, OData V4, and Fiori Elements CRUD.
 
+# SAP ABAP RAP Blog CRUD Application
+
+A complete **SAP ABAP RAP-based Blog CRUD application** demonstrating database tables, CDS views, RAP behavior definitions, OData services, and a Fiori Elements UI.
+
+## Project Structure
+
+```text
 sap-abap-rap-blog-crud
 │
 ├── Database Tables
