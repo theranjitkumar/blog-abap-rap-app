@@ -3,15 +3,6 @@
 @Metadata.ignorePropagatedAnnotations: true
 @Metadata.allowExtensions: true
 
-@UI.headerInfo: {
-    typeName: 'Blog',
-    typeNamePlural: 'Blogs',
-    title: {
-        type: #STANDARD,
-        value: 'Title'
-    }
-}
-
 define root view entity ZC_BLOG
   as projection on ZI_BLOG
 {

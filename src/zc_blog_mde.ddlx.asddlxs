@@ -1,20 +1,63 @@
 @Metadata.layer: #CORE
+
+@UI.headerInfo: {
+  typeName: 'Blog',
+  typeNamePlural: 'Blogs',
+  title: {
+    type: #STANDARD,
+    value: 'Title'
+  },
+  description: {
+    type: #STANDARD,
+    value: 'Author'
+  }
+}
+
 annotate entity ZC_BLOG with
+
 {
-  @UI: { lineItem: [{ position: 10, value: 'BlogId' }], identification: [{ position: 10, value: 'BlogId' }] }
+  @UI.facet: [
+    {
+      id: 'BlogDetails',
+      purpose: #STANDARD,
+      type: #IDENTIFICATION_REFERENCE,
+      label: 'Blog Details',
+      position: 10
+    }
+  ]
+
+  @UI.lineItem: [{ position: 10 }]
+  @UI.identification: [{ position: 10 }]
   BlogId;
 
-  @UI: { lineItem: [{ position: 20, value: 'Title' }], identification: [{ position: 20, value: 'Title' }] }
+  @UI.lineItem: [{ position: 20 }]
+  @UI.identification: [{ position: 20 }]
+  @UI.selectionField: [{ position: 10 }]
   Title;
 
-  @UI: { lineItem: [{ position: 30, value: 'Content' }], identification: [{ position: 30, value: 'Content' }] }
-  Content;
-
-  @UI: { lineItem: [{ position: 40, value: 'Author' }], identification: [{ position: 40, value: 'Author' }] }
+  @UI.lineItem: [{ position: 30 }]
+  @UI.identification: [{ position: 30 }]
   Author;
 
-  @UI: { lineItem: [{ position: 50, value: 'Status' }], identification: [{ position: 50, value: 'Status' }] }
+  @UI.lineItem: [{ position: 40 }]
+  @UI.identification: [{ position: 40 }]
+  @UI.selectionField: [{ position: 20 }]
   Status;
+
+  @UI.identification: [{ position: 50 }]
+  Content;
+
+  @UI.identification: [{ position: 60 }]
+  CreatedBy;
+
+  @UI.identification: [{ position: 70 }]
+  CreatedAt;
+
+  @UI.identification: [{ position: 80 }]
+  LastChangedBy;
+
+  @UI.identification: [{ position: 90 }]
+  LastChangedAt;
   //    CreatedBy;
   //    CreatedAt;
   //    LastChangedBy;
